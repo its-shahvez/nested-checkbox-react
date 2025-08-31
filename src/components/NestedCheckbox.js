@@ -16,7 +16,7 @@ const initializeState = (nodes) => {
 };
 
 const NestedCheckbox = () => {
-  const [nodes, setNodes] = useState(initialNodes);
+  const [nodes] = useState(initialNodes);
   const [checkedState, setCheckedState] = useState(() => initializeState(initialNodes));
 
   // paraenbt class updated 
