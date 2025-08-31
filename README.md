@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+Nested Checkbox Component in React
+This is an advanced and fully functional nested checkbox component built in React.js. It's designed to manage complex tree-like data structures where there is a logical relationship between parent and child checkboxes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+Select/Deselect All: A single checkbox to select or deselect all items at once.
 
-## Available Scripts
+Parent-Child Logic: Selecting a parent checkbox automatically checks all its children.
 
-In the project directory, you can run:
+Indeterminate State: A parent checkbox will show an "indeterminate" state if only some of its children are selected.
 
-### `npm start`
+Multi-Level Nesting: The component supports multiple levels of nesting (e.g., Category > Sub-Category > Item).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Modern UI: A clean, attractive, and user-friendly interface styled with custom CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Reusable Component: Designed to be easily integrated into any React project.
 
-### `npm test`
+🛠️ Tech Stack
+Frontend: React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Styling: Custom CSS (Flexbox)
 
-### `npm run build`
+⚙️ Getting Started
+Follow the steps below to set up and run the project on your local machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prerequisites
+Ensure you have Node.js and npm installed on your system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Node.js (npm is included with the installation)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Installation
+Clone the repository:
 
-### `npm run eject`
+Bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Navigate to the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Bash
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd nested-checkbox-react
+Install dependencies:
 
-## Learn More
+Bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
+Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bash
 
-### Code Splitting
+npm start
+Your browser should automatically open to http://localhost:3000, where you can see the project running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📂 File Structure
+The project follows a simple and organized file structure:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+├── components/
+│   └── NestedCheckbox.js   # The main component with all the logic
+├── data/
+│   └── nodes.js            # The tree-like data for the checkboxes
+├── App.js                  # The main App component
+└── styles.css              # Custom CSS styles
